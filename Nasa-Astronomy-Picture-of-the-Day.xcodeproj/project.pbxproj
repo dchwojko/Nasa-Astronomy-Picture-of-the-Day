@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		54F0229D1F83367800FA82E9 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0229C1F83367800FA82E9 /* ImageViewController.swift */; };
+		54F0229F1F8336B700FA82E9 /* ImageDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F0229E1F8336B700FA82E9 /* ImageDetail.swift */; };
 		54FAAFAF1F82FECA00F338C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54FAAFAE1F82FECA00F338C1 /* AppDelegate.swift */; };
 		54FAAFB41F82FECA00F338C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 54FAAFB21F82FECA00F338C1 /* Main.storyboard */; };
 		54FAAFB61F82FECA00F338C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 54FAAFB51F82FECA00F338C1 /* Assets.xcassets */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		54F0229C1F83367800FA82E9 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
+		54F0229E1F8336B700FA82E9 /* ImageDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetail.swift; sourceTree = "<group>"; };
 		54FAAFAB1F82FECA00F338C1 /* Nasa-Astronomy-Picture-of-the-Day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Nasa-Astronomy-Picture-of-the-Day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		54FAAFAE1F82FECA00F338C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		54FAAFB31F82FECA00F338C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +41,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54F0229A1F83358600FA82E9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		54F0229B1F83359500FA82E9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				54F0229E1F8336B700FA82E9 /* ImageDetail.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		54F022A01F83387600FA82E9 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				54FAAFB51F82FECA00F338C1 /* Assets.xcassets */,
+			);
+			name = Assets;
+			sourceTree = "<group>";
+		};
 		54FAAFA21F82FEC900F338C1 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +83,12 @@
 		54FAAFAD1F82FECA00F338C1 /* Nasa-Astronomy-Picture-of-the-Day */ = {
 			isa = PBXGroup;
 			children = (
+				54F022A01F83387600FA82E9 /* Assets */,
+				54F0229B1F83359500FA82E9 /* Model */,
+				54F0229A1F83358600FA82E9 /* View */,
 				54FAAFC01F83008B00F338C1 /* Controller */,
 				54FAAFAE1F82FECA00F338C1 /* AppDelegate.swift */,
 				54FAAFB21F82FECA00F338C1 /* Main.storyboard */,
-				54FAAFB51F82FECA00F338C1 /* Assets.xcassets */,
 				54FAAFB71F82FECA00F338C1 /* LaunchScreen.storyboard */,
 				54FAAFBA1F82FECA00F338C1 /* Info.plist */,
 			);
@@ -71,6 +100,7 @@
 			children = (
 				54FAAFC11F83012300F338C1 /* TableViewController.swift */,
 				54FAAFC31F83014200F338C1 /* CollectionViewController.swift */,
+				54F0229C1F83367800FA82E9 /* ImageViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -149,7 +179,9 @@
 			files = (
 				54FAAFC41F83014200F338C1 /* CollectionViewController.swift in Sources */,
 				54FAAFAF1F82FECA00F338C1 /* AppDelegate.swift in Sources */,
+				54F0229D1F83367800FA82E9 /* ImageViewController.swift in Sources */,
 				54FAAFC21F83012300F338C1 /* TableViewController.swift in Sources */,
+				54F0229F1F8336B700FA82E9 /* ImageDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

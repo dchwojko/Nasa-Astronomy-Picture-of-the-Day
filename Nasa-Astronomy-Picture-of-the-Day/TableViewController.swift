@@ -11,6 +11,7 @@ import UIKit
 class TableViewController: UITableViewController {
     
     let reuseIdentifier = "Cell"
+    var detailViewController: ImageViewController = ImageViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,11 +21,7 @@ class TableViewController: UITableViewController {
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        detailViewController = self.storyboard?.instantiateViewController(withIdentifier: "ImageViewController") as! ImageViewController
     }
 
     // MARK: - Table view data source
@@ -43,7 +40,10 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath)
 
         // Configure the cell...
-        cell.textLabel?.text = "placeholder"
+        cell.textLabel?.text = "_title_"
+        // TO DO: Set subtitle
+        cell.detailTextLabel?.text = "_date_"
+        // TO DO: Set image
 
         return cell
     }
